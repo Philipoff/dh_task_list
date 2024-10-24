@@ -1,0 +1,20 @@
+export const logoLetters = [
+    {letter: "D", marked: true, minified: true, expanded: true, width: '20px'},
+    {letter: "I", marked: false, minified: false, expanded: true, width: '8px'},
+    {letter: "G", marked: false, minified: false, expanded: true, width: '19px'},
+    {letter: "I", marked: false, minified: false, expanded: true, width: '8px'},
+    {letter: "T", marked: false, minified: false, expanded: true, width: '15px'},
+    {letter: "A", marked: false, minified: false, expanded: true, width: '19px'},
+    {letter: "L", marked: false, minified: false, expanded: true, width: '20px'},
+    {letter: " ", marked: false, minified: false, expanded: true, width: '8px'},
+    {letter: "H", marked: true, minified: true, expanded: true, width: '19px'}, // HUMANITIES
+    {letter: "U", marked: false, minified: false, expanded: true, width: '18px'},
+    {letter: "M", marked: false, minified: false, expanded: true, width: '23px'},
+    {letter: "A", marked: false, minified: false, expanded: true, width: '18px'},
+    {letter: "N", marked: false, minified: false, expanded: true, width: '18px'},
+    {letter: "I", marked: false, minified: false, expanded: true, width: '8px'},
+    {letter: "T", marked: false, minified: false, expanded: true, width: '15px'},
+    {letter: "I", marked: false, minified: false, expanded: true, width: '7px'},
+    {letter: "E", marked: false, minified: false, expanded: true, width: '15px'},
+    {letter: "S", marked: false, minified: false, expanded: true, width: '15px'},
+]

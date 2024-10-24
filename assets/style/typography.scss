@@ -1,0 +1,53 @@
+.page-header {
+  font-size: 24px;
+  text-align: center;
+}
+
+.markdown-content {
+  h1 {
+    @apply text-5xl mt-2 mb-1;
+  }
+
+  h2 {
+    @apply text-4xl mb-2;
+  }
+
+  h3 {
+    @apply text-3xl mb-2;
+  }
+
+  h4 {
+    @apply text-2xl mb-2;
+  }
+
+  h5 {
+    @apply text-xl mb-2;
+  }
+
+  h6 {
+    @apply text-lg mb-2;
+  }
+
+  p {
+    @apply mb-2;
+  }
+
+  hr {
+    @apply my-2;
+    border-color: var(--border-color);
+  }
+
+  ul {
+    list-style: disc;
+    padding-left: 1.2rem;
+  }
+
+  ol {
+    padding-left: 1.2rem;
+    list-style-type: decimal;
+
+    li {
+      padding-left: 0.6rem;
+    }
+  }
+}

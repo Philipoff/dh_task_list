@@ -1,0 +1,215 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import "@/assets/style/fonts/montserrat.css";
+//@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap');
+@import "animations";
+@import "typography";
+
+html {
+  overflow-y: scroll
+}
+
+// Set default theme colors
+body {
+  $backgroundPrimary: #151515;
+  $backgroundSecondary: #2c2c2c;
+  $backgroundTertiary: #2c2c2c;
+  $textColor: rgb(255, 255, 255);
+  $shadowColor: rgba(255, 255, 255, .3);
+
+  $accentOrange: #ff8800;
+  $accentGreen: #00FF57;
+  $accentBlue: #00BDC9;
+  $accentPurple: #df006a;
+  $accentError: #ca1515;
+  $borderColor: rgba($textColor, .25);
+
+  --background-primary: #{$backgroundPrimary};
+  --background-tetriary: #{$backgroundTertiary};
+  --background-secondary: #{$backgroundSecondary};
+  --text-color: #{$textColor};
+  --shadow-color: #{$shadowColor};
+  --border-color: #{$borderColor};
+
+  --accent-orange: #{$accentOrange};
+  --accent-green: #{$accentGreen};
+  --accent-blue: #{$accentBlue};
+  --accent-purple: #{$accentPurple};
+  --accent-error: #{$accentError};
+
+  --accent: #{$textColor};
+  --accent-project: #{$textColor};
+}
+
+// Set light theme colors
+.light-mode body {
+  $backgroundPrimary: #f0f0f0;
+  $backgroundSecondary: #ffffff;
+  $backgroundTertiary: #f0f0f0;
+  $textColor: rgb(26, 26, 26);
+  $shadowColor: rgba(0, 0, 0, .15);
+
+  $accentOrange: #c92500;
+  $accentGreen: #08b200;
+  $accentBlue: #00BDC9;
+  $accentPurple: #C7005F;
+  $accentError: #ab0707;
+  $borderColor: rgba($textColor, .25);
+
+  --background-primary: #{$backgroundPrimary};
+  --background-secondary: #{$backgroundSecondary};
+  --background-tetriary: #{$backgroundTertiary};
+  --text-color: #{$textColor};
+  --shadow-color: #{$shadowColor};
+  --border-color: #{$borderColor};
+
+  --accent-orange: #{$accentOrange};
+  --accent-green: #{$accentGreen};
+  --accent-blue: #{$accentBlue};
+  --accent-purple: #{$accentPurple};
+  --accent-error: #{$accentError};
+
+  --accent: #{$textColor};
+  --accent-project: #{$textColor};
+}
+
+body[variant="light"] {
+  .colored-brightness {
+    filter: brightness(.9);
+  }
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: var(--background-primary);
+  color: var(--text-color);
+  font-family: 'Montserrat', sans-serif;
+
+  transition: background-color .3s ease;
+}
+
+::selection {
+  background-color: var(--accent);
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 2px;
+  transition: all 0.3s ease;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--background-primary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--background-secondary);
+  border-radius: 50px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, .6);
+}
+
+.blue-variant body {
+  --accent: var(--accent-blue);
+}
+
+.orange-variant body {
+  --accent: var(--accent-orange);
+}
+
+.green-variant body {
+  --accent: var(--accent-green);
+}
+
+.purple-variant body {
+  --accent: var(--accent-purple);
+}
+
+.project-variant body {
+  --accent: var(--accent-project);
+}
+
+.error-variant body {
+  --accent: var(--accent-error);
+}
+
+.text-accent {
+  color: var(--accent);
+}
+
+.shadow-accent {
+  text-shadow: 0 0 10px var(--accent);
+}
+
+.bg-accent {
+  background: var(--accent);
+}
+
+.border-accent {
+  border-color: var(--accent);
+}
+
+.ovc-btn {
+  background-color: var(--accent);
+  color: var(--background-primary);
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  transition: all .3s ease;
+  padding: 8px 14px;
+
+  &:hover {
+    filter: brightness(0.9);
+  }
+
+  &:active {
+    filter: brightness(0.7);
+  }
+
+  &:disabled {
+    filter: grayscale(1);
+  }
+}
+
+.ovc-input {
+  background: none;
+  border: 1px solid var(--text-color);
+  border-radius: 5px;
+  padding: 4px 8px;
+  transition: all .3s ease;
+  color: var(--text-color);
+
+  &:focus {
+    outline: none;
+    border-color: var(--accent);
+  }
+
+  &[type="color"] {
+    height: 34px;
+  }
+}
+
+.project-card {
+  width: 100%;
+  flex: 0 1 auto;
+  transition: all .3s ease;
+}
+
+.clear-topics {
+  width: 36px;
+  height: 36px;
+  aspect-ratio: 1;
+  border: 1px solid var(--text-color);
+  border-radius: 10px;
+  color: var(--text-color);
+  background: var(--background-tetriary);
+  transition: all .3s ease;
+}
