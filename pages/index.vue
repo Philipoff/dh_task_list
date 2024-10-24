@@ -17,19 +17,17 @@
     </div>
 
     <section class="mt-16">
-      <h3 class="text-center text-2xl mb-4">Избранные проекты</h3>
+      <h3 class="text-center text-2xl mb-4">Что мы делаем?</h3>
 
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 auto-rows-fr gap-3">
         <ovc-project-cover
             :bg="ovcCover"
             bg-color="#1A7137"
             text-color="#FFFFFF"
-            to="/projects/overcreated"
         >
-          overcreated
-
+          Пушкин &lt;цифровой&gt;
           <template #description>
-            Моя домашяя страница. Вы находитесь здесь!
+            Проект и портал, который организует и представляет знания об А. C. Пушкине
           </template>
         </ovc-project-cover>
 
@@ -37,12 +35,11 @@
             :bg="cdCover"
             bg-color="#FFDB58"
             text-color="#363636"
-            to="/projects/chekdeli"
         >
-          Чекдели
-
+          DH про AI
           <template #description>
-            Делит чеки на компанию. Просто и быстро
+            Исследуем и осмысляем изменения академии, труда и привычек
+            в ходе цифровизации и развития AI.
           </template>
         </ovc-project-cover>
 
@@ -50,12 +47,10 @@
             :bg="dtCover"
             text-color="#FFFFFF"
             bg-color="#252536"
-            to="/portfprojectsolio/cifrovoy_dvoynik"
         >
-          Цифровой двойник
-
+          Мы в медиа
           <template #description>
-            Делит чеки на компанию. Просто и быстро
+            Рассказываем о жизни центра, учёбе в магистратуре, работах и проектах студентов. Ведём блог в издании «Системный Блокъ».
           </template>
         </ovc-project-cover>
 
@@ -67,7 +62,7 @@
           Все проекты
 
           <template #description>
-            Моё портфолио с различными проектами
+            Наши работы в разных институциях
           </template>
         </ovc-project-cover>
       </div>
